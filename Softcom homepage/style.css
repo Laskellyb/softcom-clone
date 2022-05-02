@@ -9,6 +9,7 @@
 :root {
   --primary-blue-color: #232858;
   --grey-color: rgb(184, 179, 179);
+  --light-blue-color: #f0f3ff;
 }
 
 /* Text styles */
@@ -245,6 +246,88 @@ body {
   padding-top: 20px;
 }
 
+/* Grid 2 */
+.grid-text p {
+  color: var(--primary-blue-color);
+  width: 70vw;
+  padding: 30px;
+}
+
+.grid-text button {
+  background-color: rgb(0, 73, 243);
+  color: white;
+  font-size: 20px;
+  padding: 15px 40px;
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  gap: 30px;
+}
+
+.grid-items {
+  height: 50vh;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+.grid-items:hover {
+  transform: scale(1.02);
+  transition: 5s ease-in-out;
+}
+
+.grid-items:first-of-type {
+  background-image: url(/images/pexels-jack-sparrow-4047288.jpg);
+  background-size: cover;
+}
+
+.grid-items:nth-of-type(2) {
+  background-image: url(/images/pexels-kampus-production-8475202.jpg);
+  background-size: cover;
+}
+
+.grid-items:nth-of-type(3) {
+  background-image: url(/images/pexels-uriel-mont-6280398.jpg);
+  background-size: cover;
+}
+
+.grid-items:nth-of-type(4) {
+  background-image: url(/images/pexels-andrea-piacquadio-3796810.jpg);
+  background-size: cover;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: var(--light-blue-color);
+  padding: 50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 35px;
+  color: rgb(30, 30, 56);
+}
+
+.testimonial img {
+  width: 120px;
+}
+
+.testimonial div {
+  padding: 50px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 @media (max-width: 798px) {
   .text-md {
     font-size: 30px;
@@ -329,5 +412,43 @@ body {
     background-size: 100vh;
     height: 70vh;
     padding: 30px;
+  }
+
+  /* Grid 2 */
+  .grid-text p {
+    width: 100vw;
+    padding: 30px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .grid-text button {
+    margin: 20px 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-items {
+    height: 40vh;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  /* Testimonial */
+  .testimonial {
+    padding: 50px 20px;
+    font-size: 25px;
+  }
+
+  .testimonial img {
+    width: 80px;
+  }
+
+  .testimonial div {
+    padding: 50px 20px 0px;
   }
 }

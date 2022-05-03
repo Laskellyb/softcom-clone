@@ -327,7 +327,80 @@ body {
   justify-content: space-between;
 }
 
+/* Blue grid */
+.blue-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+}
 
+.blue-grid-1,
+.blue-grid-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #004BFF;
+  color: white;
+  padding: 100px 200px 0px 60px;
+  justify-content: space-between;
+}
+
+.blue-grid-2 {
+  background-color: #0042E1;
+}
+
+.blue-grid-1 button,
+.blue-grid-2 button {
+  align-self: flex-start;
+  background-color: transparent;
+  border: 2px white solid;
+  padding: 20px 40px;
+  font-size: 13px;
+  color: white;
+}
+
+.blue-grid .font {
+  opacity: 0.2;
+  align-self: flex-end;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  background-color: var(--light-blue-color);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 40px;
+  padding: 100px 0;
+}
+
+.footer-grid div {
+  line-height: 3rem;
+}
+
+.footer-grid div p {
+  cursor: pointer;
+}
+
+.footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -100px;
+}
+
+.footer .social-icons i {
+  color: rgb(50, 50, 245);
+  background-color: rgb(188, 201, 253);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+/* Media queries */
 @media (max-width: 798px) {
   .text-md {
     font-size: 30px;
@@ -451,4 +524,57 @@ body {
   .testimonial div {
     padding: 50px 20px 0px;
   }
+
+  /* Blue grid */
+  .blue-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80vh;
+  }
+
+  .blue-grid-1,
+  .blue-grid-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #004BFF;
+    color: white;
+    padding: 100px 30px 0px 60px;
+    justify-content: space-around;
+  }
+
+  .blue-grid-2 {
+    background-color: #0042E1;
+  }
+
+  .blue-grid-1 button,
+  .blue-grid-2 button {
+    margin-top: 40px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 300px;
+    padding: 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid div {
+    line-height: 2.5rem;
+    font-size: 15px;
+  }
+
+  .footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+  }
+
+  .footer .social-icons i {
+    margin-top: 40px;
+  }
+
+
 }

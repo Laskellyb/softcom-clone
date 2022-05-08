@@ -611,3 +611,45 @@ body {
     margin-top: 40px;
   }
 }
+
+@media (max-width:400px) {
+
+  .showcase .form-container {
+    padding: 10px;
+  }
+
+  .showcase select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: var(--grey-color);
+    font-size: 14px;
+    line-height: 1rem;
+  }
+
+  .showcase input {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .testimonial {
+    padding: 50px 5px;
+  }
+
+  .testimonial img {
+    width: 70px;
+  }
+
+  .footer .copyright {
+    font-size: 14px;
+  }
+
+  .footer .copyright p:nth-last-of-type(2) {
+    display: none;
+  }
+
+
+  .footer .social-icons i {
+    margin-right: 15px;
+  }
+}
